@@ -9,10 +9,12 @@ export class ReadyState extends State {
   }
 
   play(): void {
+    this.musicPlayer.startPlayback();
     this.musicPlayer.changeState(new PlayState(this.musicPlayer));
   }
 
   lock(): void {
+    this.musicPlayer.startPlayback();
     this.musicPlayer.changeState(new LockedState(this.musicPlayer));
   }
 }

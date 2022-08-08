@@ -7,11 +7,11 @@ export class State {
     this.musicPlayer = musicPlayer;
   }
 
-  lock() {}
+  clickLock() {}
 
-  play() {}
+  clickPlay() {}
 
-  next() {}
+  clickNext() {}
 
-  previous() {}
+  clickPrevious() {}
 }

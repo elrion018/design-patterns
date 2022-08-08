@@ -5,4 +5,8 @@ export class LockedState extends State {
   constructor(musicPlayer: MusicPlayer) {
     super(musicPlayer);
   }
+
+  clickLock(): void {
+      
+  }
 }
