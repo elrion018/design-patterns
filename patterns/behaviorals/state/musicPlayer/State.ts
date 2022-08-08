@@ -1,25 +1,17 @@
 import { MusicPlayer } from './MusicPlayer';
 
 export class State {
-  private musicPlayer: MusicPlayer;
+  musicPlayer: MusicPlayer;
 
   constructor(musicPlayer: MusicPlayer) {
     this.musicPlayer = musicPlayer;
   }
 
-  lock() {
+  lock() {}
 
-  }
+  play() {}
 
-  play() {
+  next() {}
 
-  }
-
-  next() {
-
-  }
-
-  previous() {
-    
-  }
+  previous() {}
 }

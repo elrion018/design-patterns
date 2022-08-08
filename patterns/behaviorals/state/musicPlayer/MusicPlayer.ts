@@ -8,4 +8,8 @@ export class MusicPlayer {
   constructor() {
     this.state = new ReadyState(this);
   }
+
+  changeState(nextState: State) {
+    this.state = nextState;
+  }
 }
