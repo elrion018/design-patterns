@@ -1,15 +1,18 @@
 import { State } from './State';
 
 import { ReadyState } from './ReadyState';
+import { MusicList } from './MusicList';
 import { Music } from './Music';
 
 export class MusicPlayer {
   private state: State;
-  private currentMusic: Music;
+  private musicList: MusicList;
+  private currentMusic: Music | null;
 
   constructor() {
     this.state = new ReadyState(this);
-    this.currentMusic = new Music(this, 400);
+    this.musicList = new MusicList(this, []);
+    this.currentMusic = this.musicList.getCurrentMusic();
   }
 
   changeState(nextState: State) {
@@ -24,11 +27,19 @@ export class MusicPlayer {
     this.state.clickPlay();
   }
 
-  startPlayback() {}
+  startPlayback() {
+    this.currentMusic?.startPlayback();
+  }
 
-  stopPlayback() {}
+  stopPlayback() {
+    this.currentMusic?.stopPlayback();
+  }
 
-  nextMusic() {}
+  nextMusic() {
+    this.musicList.nextMusic();
+  }
 
-  prevMusic() {}
+  prevMusic() {
+    this.musicList.prevMusic();
+  }
 }

@@ -8,4 +8,12 @@ export class Music {
     this.musicPlayer = musicPlayer;
     this.playTime = playTime;
   }
+
+  startPlayback() {
+
+  }
+
+  stopPlayback() {
+    
+  }
 }

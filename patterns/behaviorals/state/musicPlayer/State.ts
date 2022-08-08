@@ -13,5 +13,5 @@ export class State {
 
   clickNext() {}
 
-  clickPrevious() {}
+  clickPrev() {}
 }
