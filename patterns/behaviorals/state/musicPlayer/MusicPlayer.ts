@@ -19,6 +19,10 @@ export class MusicPlayer {
     this.state = nextState;
   }
 
+  getCurrentMusic() {
+    return this.currentMusic;
+  }
+
   clickPlay() {
     this.state.clickPlay();
   }
