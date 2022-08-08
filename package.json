@@ -1,0 +1,15 @@
+{
+  "name": "design-patterns",
+  "version": "1.0.0",
+  "description": "타입스크립트로 짠 디자인 패턴 저장 레포지토리",
+  "main": "index.js",
+  "repository": "https://github.com/elrion018/design-patterns.git",
+  "author": "Jaemin Cheon <karl@zuminternet.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.21.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.7.4"
+  }
+}
