@@ -31,20 +31,20 @@ export class MusicPlayer {
     this.state.clickPlay();
   }
 
+  clickNextMusic() {
+    this.musicList.nextMusic();
+  }
+
+  clickPrevMusic() {
+    this.musicList.prevMusic();
+  }
+
   startPlayback() {
     this.currentMusic?.startPlayback();
   }
 
   stopPlayback() {
     this.currentMusic?.stopPlayback();
-  }
-
-  nextMusic() {
-    this.musicList.nextMusic();
-  }
-
-  prevMusic() {
-    this.musicList.prevMusic();
   }
 
   rewindToFirst() {

@@ -13,8 +13,10 @@ export class LockedState extends State {
     if (this.musicPlayer.getCurrentMusic()) {
       this.musicPlayer.startPlayback();
       this.musicPlayer.changeState(new PlayState(this.musicPlayer));
-    } else {
-      this.musicPlayer.changeState(new ReadyState(this.musicPlayer));
+
+      return;
     }
+
+    this.musicPlayer.changeState(new ReadyState(this.musicPlayer));
   }
 }

@@ -2,9 +2,9 @@ import { Music } from './Music';
 import { MusicPlayer } from './MusicPlayer';
 
 export class MusicList {
-  musicPlayer: MusicPlayer;
-  musicList: Music[];
-  currentIndex: number;
+  private musicPlayer: MusicPlayer;
+  private musicList: Music[];
+  private currentIndex: number;
 
   constructor(musicPlayer: MusicPlayer, musicList: Music[]) {
     this.musicPlayer = musicPlayer;
