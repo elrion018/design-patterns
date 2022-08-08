@@ -8,13 +8,23 @@ export class PlayState extends State {
     super(musicPlayer);
   }
 
-  lock(): void {
+  clickLock(): void {
     this.musicPlayer.stopPlayback();
     this.musicPlayer.changeState(new LockedState(this.musicPlayer));
   }
 
-  play(): void {
+  clickPlay(): void {
     this.musicPlayer.stopPlayback();
     this.musicPlayer.changeState(new ReadyState(this.musicPlayer));
+  }
+
+  clickNext(): void {
+    this.musicPlayer.stopPlayback();
+    this.musicPlayer.nextMusic();
+  }
+
+  clickPrev(): void {
+    this.musicPlayer.stopPlayback();
+    this.musicPlayer.prevMusic();
   }
 }

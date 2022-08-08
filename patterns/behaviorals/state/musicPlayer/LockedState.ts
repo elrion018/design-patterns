@@ -10,8 +10,11 @@ export class LockedState extends State {
   }
 
   clickLock(): void {
-    if (this.musicPlayer.getCurrentMusic())
+    if (this.musicPlayer.getCurrentMusic()) {
+      this.musicPlayer.startPlayback();
       this.musicPlayer.changeState(new PlayState(this.musicPlayer));
-    else this.musicPlayer.changeState(new ReadyState(this.musicPlayer));
+    } else {
+      this.musicPlayer.changeState(new ReadyState(this.musicPlayer));
+    }
   }
 }
