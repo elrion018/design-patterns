@@ -42,4 +42,8 @@ export class MusicPlayer {
   prevMusic() {
     this.musicList.prevMusic();
   }
+
+  rewindToFirst() {
+    this.currentMusic?.rewindToFirst();
+  }
 }

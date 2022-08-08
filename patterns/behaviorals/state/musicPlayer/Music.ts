@@ -2,18 +2,20 @@ import { MusicPlayer } from './MusicPlayer';
 
 export class Music {
   musicPlayer: MusicPlayer;
-  playTime: number;
+  totalPlayTime: number;
+  currentPlayTime: number;
 
-  constructor(musicPlayer: MusicPlayer, playTime: number) {
+  constructor(musicPlayer: MusicPlayer, totalPlayTime: number) {
     this.musicPlayer = musicPlayer;
-    this.playTime = playTime;
+    this.totalPlayTime = totalPlayTime;
+    this.currentPlayTime = 0;
   }
 
-  startPlayback() {
+  startPlayback() {}
 
-  }
+  stopPlayback() {}
 
-  stopPlayback() {
-    
+  rewindToFirst() {
+    this.currentPlayTime = 0;
   }
 }

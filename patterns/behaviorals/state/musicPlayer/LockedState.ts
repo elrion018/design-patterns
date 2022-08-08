@@ -6,7 +6,5 @@ export class LockedState extends State {
     super(musicPlayer);
   }
 
-  clickLock(): void {
-      
-  }
+  clickLock(): void {}
 }
