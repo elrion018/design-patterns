@@ -7,8 +7,9 @@
   "author": "Jaemin Cheon <karl@zuminternet.com>",
   "license": "MIT",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc --build --clean"
   },
+  "type": "module",
   "devDependencies": {
     "eslint": "^8.21.0",
     "eslint-plugin-prettier": "^4.2.1",
