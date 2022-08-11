@@ -3,7 +3,7 @@ import { RoundPeg } from './RoundPeg';
 export class RoundHole {
   radius: number;
 
-  constructor(radius: number) {
+  constructor(radius: number = 0) {
     this.radius = radius;
   }
 
