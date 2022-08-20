@@ -15,7 +15,9 @@ export class Guest {
     if (this.checkIsWaiter(this.waiter)) this.waiter?.execute();
   }
 
-  private checkIsWaiter(object: any): object is Waiter {
-    return Boolean(object.execute);
+  private checkIsWaiter(object: Waiter | null): object is Waiter {
+    return Boolean(
+      object && object.execute && typeof object.execute === 'function'
+    );
   }
 }
