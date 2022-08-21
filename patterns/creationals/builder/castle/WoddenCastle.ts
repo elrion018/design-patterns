@@ -1,6 +1,10 @@
 export class WoodenCastle {
   private components: string[] = [];
 
+  getComponents() {
+    return [...this.components];
+  }
+
   buildGate() {
     this.components.push('Wooden Gate');
   }
