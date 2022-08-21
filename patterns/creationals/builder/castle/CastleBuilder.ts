@@ -1,4 +1,4 @@
-interface CastleBuilder {
+export interface CastleBuilder {
   buildGate(): void;
   buildTower(): void;
   buildWall(): void;
