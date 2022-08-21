@@ -9,7 +9,11 @@ export class StoneCastleBuilder implements CastleBuilder {
   }
 
   getCastle() {
-    return this.castle;
+    const castle = this.castle;
+
+    this.reset();
+
+    return castle;
   }
 
   reset() {
