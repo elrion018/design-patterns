@@ -8,11 +8,19 @@ export class WoodenCastleBuilder implements CastleBuilder {
     this.castle = castle;
   }
 
-  buildGate(): void {}
+  buildGate(): void {
+    this.castle.buildGate();
+  }
 
-  buildTower(): void {}
+  buildTower(): void {
+    this.castle.buildTower();
+  }
 
-  buildWall(): void {}
+  buildWall(): void {
+    this.castle.buildWall();
+  }
 
-  buildPalace(): void {}
+  buildPalace(): void {
+    this.castle.buildPalace();
+  }
 }
