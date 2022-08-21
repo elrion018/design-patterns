@@ -1,10 +1,10 @@
 import { CastleBuilder } from './CastleBuilder';
-import { WoodenCastle } from './WoodenCastle';
+import { StoneCastle } from './StoneCastle';
 
-export class WoodenCastleBuilder implements CastleBuilder {
-  private castle: WoodenCastle;
+export class StoneCastleBuilder implements CastleBuilder {
+  private castle: StoneCastle;
 
-  constructor(castle: WoodenCastle) {
+  constructor(castle: StoneCastle) {
     this.castle = castle;
   }
 
