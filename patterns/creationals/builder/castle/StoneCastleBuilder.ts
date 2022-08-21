@@ -4,8 +4,16 @@ import { StoneCastle } from './StoneCastle';
 export class StoneCastleBuilder implements CastleBuilder {
   private castle: StoneCastle;
 
-  constructor(castle: StoneCastle) {
-    this.castle = castle;
+  constructor() {
+    this.castle = new StoneCastle();
+  }
+
+  getCastle() {
+    return this.castle;
+  }
+
+  reset() {
+    this.castle = new StoneCastle();
   }
 
   buildGate(): void {

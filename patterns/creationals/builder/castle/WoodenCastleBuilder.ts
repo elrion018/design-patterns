@@ -4,8 +4,16 @@ import { WoodenCastle } from './WoodenCastle';
 export class WoodenCastleBuilder implements CastleBuilder {
   private castle: WoodenCastle;
 
-  constructor(castle: WoodenCastle) {
-    this.castle = castle;
+  constructor() {
+    this.castle = new WoodenCastle();
+  }
+
+  getCastle() {
+    return this.castle;
+  }
+
+  reset() {
+    this.castle = new WoodenCastle();
   }
 
   buildGate(): void {
