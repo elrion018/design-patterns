@@ -1,3 +1,5 @@
+import { Data, DataSource } from './DataSource';
+
 export class FileDataSource implements DataSource {
   private fileName: string;
 
@@ -6,10 +8,10 @@ export class FileDataSource implements DataSource {
   }
 
   write(data: Data): void {
-    // ... Write data to file.
+    // data를 파일에 저장한다(쓴다).
   }
 
   read(): Data {
-    // ... read data from file.
+    // data를 파일로부터 읽는다.
   }
 }
