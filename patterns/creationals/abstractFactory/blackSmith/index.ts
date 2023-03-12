@@ -1,5 +1,5 @@
 /**
- * 추상팩토리(abstract factory) 패턴의 예제로서 대장간, 대장장이, 칼, 방패 모듈
+ * 추상팩토리(abstract factory) 패턴의 예제로서 대장간, 대장장이, 칼, 방패 모듈 구현
  */
 
 import { 대장간 } from './BlackSmith';
